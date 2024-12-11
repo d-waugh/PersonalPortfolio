@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Features Comparison Table</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .comparison-table {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .feature-card {
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(8, 8, 8, 0.1);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      text-align: center;
+    }
+
+    .feature-card h3 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      font-size: 17px;
+      margin-bottom: 15px;
+    }
+
+    .feature-card ul {
+      list-style: none;
+      margin-bottom: 20px;
+      padding-left: 0;
+    }
+
+    .feature-card li {
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
+    .choose-button {
+      background-color: #0095ff;
+      color: rgb(255, 255, 255);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .choose-button:hover {
+      background-color: #0460c3;
+    }
+
+    .feature-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(8, 8, 8, 0.2);
+    }
+
+    @media (max-width: 1024px) {
+      .comparison-table {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .comparison-table {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-card {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Select your Video Editing Software Version</h2>
+
+  <section class="comparison-table">
+    <div class="feature-card">
+      <h3>Basic</h3>
+      <p>Our free version of our best software.</p>
+      <ul>
+        <li>Average render times</li>
+        <li>Access to 25+ plugins and addons</li>
+        <li>Basic functionality of our program</li>
+      </ul>
+      <button class="choose-button">Free</button>
+    </div>
+    <div class="feature-card">
+      <h3>Advanced</h3>
+      <p>A more in-depth version of our software.</p>
+      <ul>
+        <li>Great render times</li>
+        <li>Access to 150+ plugins and addons</li>
+        <li>Higher audio and video bitrate availability</li>
+      </ul>
+      <button class="choose-button">$49.99</button>
+    </div>
+    <div class="feature-card">
+      <h3>Premium</h3>
+      <p>Ideal for expert video editors or enthusiasts.</p>
+      <ul>
+        <li>Lightning fast render times</li>
+        <li>Unlimited plugins and addons</li>
+        <li>Early access to additional features + all previous tiers</li>
+      </ul>
+      <button class="choose-button">$119.99</button>
+    </div>
+  </section>
+</body>
+</html>

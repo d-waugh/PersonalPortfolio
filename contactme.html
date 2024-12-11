@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: #c7932b;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    p.contact-info {
+      margin-bottom: 20px;
+      font-size: 1em;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    label {
+      font-size: 1em;
+    }
+
+    input,
+    textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #c7932b;
+      color: #fff;
+      margin-top: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dayne's Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="Final.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="contactme.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p class="contact-info">
+      <strong>Email:</strong> <a href="mailto:daynewaugh11@outlook.com">daynewaugh11@outlook.com</a><br />
+      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dayne-waugh" target="_blank">https://www.linkedin.com/in/dayne-waugh</a>
+    </p>
+    
+
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Dayne Waugh. All rights reserved.</p>
+  </footer>
+</body>
+</html>

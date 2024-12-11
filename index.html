@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Home</title>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #283A97;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.feature-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.feature-card p {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.feature-card button {
+  padding: 10px 15px;
+  background-color: #283A97;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.feature-card button:hover {
+  background-color: #1f2f6f;
+}
+
+.feature-card.features-table {
+  grid-column: span 4;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #283A97;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .feature-container {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card.features-table {
+    grid-column: auto;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dayne's Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="Final.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="contactme.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="feature-container">
+      <div class="feature-card">
+        <h3>My Top 3 Movies</h3>
+        <p>A basic website I made that lists 3 of my favorite movies along with what makes them so great.</p>
+        <button onclick="window.location.href='projects/HW1.html'">Open</button>
+      </div>
+      <div class="feature-card">
+        <h3>Birthday Invite</h3>
+        <p>A classic birthday invitation that includes a Google maps anchor tag at the bottom</p>
+        <button onclick="window.location.href='projects/HW2.html'">Open</button>
+      </div>
+      <div class="feature-card">
+        <h3>Resume</h3>
+        <p>My resume in a clean, easy to read format with hyperlinks to my LinkedIn and email.</p>
+        <button onclick="window.location.href='projects/HW3.html'">Open</button>
+      </div>
+      <div class="feature-card">
+        <h3>Personal Blog</h3>
+        <p>A collection of media I have gone through and enjoyed recently</p>
+        <button onclick="window.location.href='projects/HW4.html'">Open</button>
+      </div>
+      <div class="feature-card features-table">
+        <h3>Features Comparison Table</h3>
+        <p>A webpage that compares the pricing of a video editing software, focusing on the feature cards.</p>
+        <button onclick="window.location.href='projects/HW5.html'">Open</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Dayne Waugh. All rights reserved.</p>
+  </footer>
+</body>
+</html>
